@@ -15,7 +15,12 @@ class RouteTest extends TestCase
      */
     public function testExample()
     {
-        $response =$this->get("/");
-        $response->assertStatus(200);
+        $response =$this->get("http://localhost/pharmacy/MVC/Controller/");
+        $response->assertStatus(404);
+
+        $responses = $this->post("http://localhost/pharmacy/MVC/Controller/");
+        $responses->assertStatus (404);
+
+
     }
 }

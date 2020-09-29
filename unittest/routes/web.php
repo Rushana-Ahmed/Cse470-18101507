@@ -15,4 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route: :post('/user', "User@index");
+Route::get('http://localhost/pharmacy/MVC/Controller/', function () {
+    return view('welcome');
+});
+
+Route::post('http://localhost/pharmacy/MVC/Controller/', function () {
+    return view('welcome');
+});
+
+Route::post('/admin' , 'Admin@index');
+
+Route::post('/medicine' , 'Medicines@Name');

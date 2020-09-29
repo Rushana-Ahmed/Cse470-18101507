@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class User extends Controller
+class Medicines extends Controller
 {
-    //
-    public function index()
-    {
+    public function Name(){
+
+
         return response(['created'=>true],200);
     }
 }

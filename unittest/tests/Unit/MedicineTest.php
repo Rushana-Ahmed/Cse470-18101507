@@ -18,8 +18,8 @@ class MedicineTest extends TestCase
         $this->assertDatabaseHas('medicines' , ['medicine_isbn'=>"	
         978-1-49192-706-9"]);
 
-        $this->assertDatabaseHas('medicine' , ['medicine_title'=>"napa extra"]);
+        $this->assertDatabaseHas('medicines' , ['medicine_title'=>"napa extra"]);
 
-        $this->assertDatabaseHas('medicine' , ['generic_name'=>"Caffeine+Paracetamol"]);
+        $this->assertDatabaseHas('medicines' , ['generic_name'=>"Caffeine+Paracetamol"]);
     }
 }
